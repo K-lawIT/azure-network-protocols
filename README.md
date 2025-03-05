@@ -8,7 +8,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
+- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://youtu.be/uGysc4upuX0?si=Gstctb-qhEmDrVLl)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -43,18 +43,35 @@ Using Windows Powershell, Pinged second virtual machine with successful results.
 </p>
 <br />
 
+![Vmlab18](https://github.com/user-attachments/assets/96768f38-7618-445d-a86f-b81e500335b5)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt="Observing DHCP traffic"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Using Wireshark, filter for DHCP traffic. Upon running ipconfig /renew, the DHCP traffic will appear.
 </p>
 <br />
 
+![Vmlab19](https://github.com/user-attachments/assets/96e12cb3-6c20-4683-a884-880dc229c53f)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt="Observing DNS Traffic"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Using wireshark, to filter for DNS traffic only, use your windows 10 pc to run nslookup. Look up an IP address and the DNS traffic will appear in wireshark.
+</p>
+<br />
+
+![vmlab20](https://github.com/user-attachments/assets/47429463-788e-4a10-8e36-50178617c84f)
+
+
+<p>
+<img src="" height="80%" width="80%" alt="Observing RDP Traffic"/>
+</p>
+<p>
+In Wireshark. filter for RDP traffic only. The traffic should be non-stop as RDP traffic is constant.
 </p>
 <br />
